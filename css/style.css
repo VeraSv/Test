@@ -589,8 +589,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf4f0', end
 
 .card .form input,
 .card .form select,
-.card .selectric,
-.card .selectric .label{
+.card .selectric
+{
     display: block;
     background-color: #ffffff;
  width: 25vw;
@@ -605,6 +605,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf4f0', end
  margin-bottom: 1.25vw;
  margin-left: 3.5vw;
 }
+
+
+
+
+.card .selectric .label {
+    line-height: 57px;
+    text-align: left;
+    margin-left:-10px;
+    font-size: 1vw;
+ font-weight: 300;
+ color: rgba(152, 151, 151, 0.5);
+}
+
+.selectric .button:after {
+    display: none;
+}
+    .selectric .button {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        background: none;
+        top: 50%;
+        right: 24px;
+        width: 9px;
+        height: 9px;
+        margin-top: -6px;
+        border-right: 2px solid rgba(152, 151, 151, 0.5);
+        border-bottom: 2px solid rgba(152, 151, 151, 0.5);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        color: #BBB;
+        text-align: center;
+    }
+    
+   .card .selectric-items li.highlighted,
+   .card .selectric-items li {
+        background-color: #ffffff;
+ width: 25vw;
+ height: 5vw;
+ border-radius: 40px;
+ border: none;
+    }
+   .card .selectric-items ul, .card .selectric-items .selectric-scroll,
+   .card .selectric-items {
+        border: none;
+        width: 25vw;
+        background-color: transparent;
+        box-shadow: none;
+        margin-left: 15px;
+        overflow: hidden;
+    }
 
 
 .card .form button {

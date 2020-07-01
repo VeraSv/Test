@@ -192,7 +192,11 @@
     }
 
     .card .form input, .card .form select,
-    .card .form button {
+    .card .form button,
+    .card .selectric .label,
+    .selectric-items li.highlighted,
+    .selectric-items li,
+    header .menu1 .label {
         font-size: 14px;
     }
     .card .accept .mark {
@@ -267,9 +271,18 @@
 }
 
 .card .form input, .card .form select,
-.card .form button {
+.card .form button,
+.card .selectric,
+.card .selectric-items li.highlighted,
+ .card    .selectric-items li,
+ .card .form .selectric-scroll,
+ .card .form .selectric-items,
+ .card .form ul {
     width: 280px;
     margin-left: -17px;
+}
+.card .selectric .label {
+    line-height: 42px;
 }
 .card .form .label span {
     font-size: 16px;
@@ -352,7 +365,13 @@
         width: 280px;
         left:20px;
     }
-    .card .form input, .card .form select, .card .form button {
+    .card .form input, .card .form select, .card .form button,
+    .card .selectric,
+    
+   .card .form .selectric-items li,
+   .card .form .selectric-items,
+   .card .form .selectric-scroll,
+   .card .form ul {
         width: 249px;
         margin-left: -9px;
     }
@@ -365,6 +384,9 @@
     header .menu a {
         display:none;
     }
+    header .menu .container {
+        background-color: transparent;
+    }
 
     header .menu1 {
         display:block;
@@ -372,8 +394,27 @@
         height:14px;
        border:none;
     }
-   
-    header .menu1 select {
-        border:none;
+    header .menu1 .selectric,
+    header .menu1 .selectric li,
+    header .menu1 .selectric ul,
+    header .menu1 .selectric-scroll  {
+        border: none;
+        width: 25vw;
+       background-color: white;
+        box-shadow: none;
+        margin-left: 15px;
+        overflow: hidden;
+        width: 450px;
+        margin-left: 20px;
     }
+    header .menu1 .selectric .label {
+        margin-left: 20px;
+        color: black;
+    }
+    .card .selectric .label {
+        line-height: 31px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
 }
