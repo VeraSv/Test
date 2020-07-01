@@ -2,7 +2,7 @@
 jQuery(document).ready(function(){
   
 
-
+  $('select').selectric();
     var par1 = document.querySelector('.parallax-layer1');
     par1.addEventListener('mousemove', function(e) {
         let x = e.clientX / window.innerWidth;
